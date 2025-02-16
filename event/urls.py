@@ -1,7 +1,10 @@
 from django.urls import path
 
-from event.views import home
+from event.views import home, about, service, faq
 
 urlpatterns = [
-    path('', home)
+    path('', home, name='home'),
+    path('about/', about, name='about'),
+    path('service/', service, name='service'),
+    path('faq/', faq, name='faq'),
 ]
