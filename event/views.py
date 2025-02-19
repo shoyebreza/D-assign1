@@ -15,9 +15,14 @@ def service(request):
 def faq(request):
     return render(request, 'faq.html')
 
+def event(request):
+    return render(request, 'event.html')
+
+def blog(request):
+    return render(request, 'blog.html')
 
 
-
-
+def gallery(request):
+    return render(request, 'gallery.html')
 
 
