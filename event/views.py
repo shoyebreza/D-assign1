@@ -25,4 +25,8 @@ def blog(request):
 def gallery(request):
     return render(request, 'gallery.html')
 
+def speaker(request):
+    return render(request, 'speaker.html')
 
+def contact(request):
+    return render(request, 'contact.html')
