@@ -1,6 +1,6 @@
 from django.urls import path
 
-from event.views import home, about, service, faq, event, blog, gallery, speaker, contact
+from event.views import home, about, service, faq, event, blog, gallery, speaker, contact, dashboard
 
 urlpatterns = [
     path('', home, name='home'),
@@ -12,4 +12,5 @@ urlpatterns = [
     path('gallery/', gallery, name='gallery'),
     path('speaker/', speaker, name='speaker'),
     path('contact/', contact, name='contact'),
+    path('dashboard/', dashboard, name='dashboard'),
 ]
